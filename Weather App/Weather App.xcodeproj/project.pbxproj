@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF4C2D1C2C254A46001ABF0B /* DailyForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C2D1B2C254A46001ABF0B /* DailyForecastTableViewCell.swift */; };
+		BF4C2D1E2C2557B3001ABF0B /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C2D1D2C2557B3001ABF0B /* UIView+Extensions.swift */; };
 		BF78C5C12AFF1A12008E8EAB /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF78C5C02AFF1A12008E8EAB /* Color+Extensions.swift */; };
 		BF81F4862AF84B1A003937B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF81F4852AF84B1A003937B2 /* AppDelegate.swift */; };
 		BF81F4882AF84B1A003937B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF81F4872AF84B1A003937B2 /* SceneDelegate.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF4C2D1B2C254A46001ABF0B /* DailyForecastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyForecastTableViewCell.swift; sourceTree = "<group>"; };
+		BF4C2D1D2C2557B3001ABF0B /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		BF78C5C02AFF1A12008E8EAB /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		BF81F4822AF84B1A003937B2 /* Weather App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weather App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF81F4852AF84B1A003937B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,10 +66,12 @@
 				BF81F4872AF84B1A003937B2 /* SceneDelegate.swift */,
 				BF81F4892AF84B1A003937B2 /* ViewController.swift */,
 				BFE618F02AFB20CD00A0DC3F /* HourlyForecastCollectionViewCell.swift */,
-				BF78C5C02AFF1A12008E8EAB /* Color+Extensions.swift */,
 				BF81F48E2AF84B1C003937B2 /* Assets.xcassets */,
 				BF81F4902AF84B1C003937B2 /* LaunchScreen.storyboard */,
 				BF81F4932AF84B1C003937B2 /* Info.plist */,
+				BF78C5C02AFF1A12008E8EAB /* Color+Extensions.swift */,
+				BF4C2D1B2C254A46001ABF0B /* DailyForecastTableViewCell.swift */,
+				BF4C2D1D2C2557B3001ABF0B /* UIView+Extensions.swift */,
 			);
 			path = "Weather App";
 			sourceTree = "<group>";
@@ -102,6 +108,7 @@
 				TargetAttributes = {
 					BF81F4812AF84B1A003937B2 = {
 						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1530;
 					};
 				};
 			};
@@ -140,8 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF4C2D1E2C2557B3001ABF0B /* UIView+Extensions.swift in Sources */,
 				BF78C5C12AFF1A12008E8EAB /* Color+Extensions.swift in Sources */,
 				BF81F48A2AF84B1A003937B2 /* ViewController.swift in Sources */,
+				BF4C2D1C2C254A46001ABF0B /* DailyForecastTableViewCell.swift in Sources */,
 				BF81F4862AF84B1A003937B2 /* AppDelegate.swift in Sources */,
 				BFE618F12AFB20CD00A0DC3F /* HourlyForecastCollectionViewCell.swift in Sources */,
 				BF81F4882AF84B1A003937B2 /* SceneDelegate.swift in Sources */,
@@ -286,6 +295,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5SV5QKCR64;
@@ -303,6 +313,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "GersonDev.Weather-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -313,6 +324,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5SV5QKCR64;

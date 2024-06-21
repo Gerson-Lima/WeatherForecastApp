@@ -64,21 +64,18 @@ class HourlyForecastCollectionViewCell: UICollectionViewCell {
     
     private func setupView() {
         setHierarchy()
-        setConstraint()
+        setConstraints()
     }
     
     private func setHierarchy() {
         contentView.addSubview(stackView)
     }
     
-    private func setConstraint() {
+    private func setConstraints() {
+        stackView.setConstraintsToParent(contentView)
+        
         NSLayoutConstraint.activate([
-            stackView.topAnchor.constraint(equalTo: contentView.topAnchor),
-            stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
-            stackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-            stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-            iconImageView.heightAnchor.constraint(equalToConstant: 33),
-//            temperatureLabel.topAnchor.constraint(equalTo: iconImageView.topAnchor, constant: 30)
+            iconImageView.heightAnchor.constraint(equalToConstant: 33)
         ])
     }
 }
